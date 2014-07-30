@@ -14,10 +14,22 @@ class HpController extends yupe\components\controllers\FrontController
 {
     /**
      * Index action:
-     * 
+     *
      * @return void
      */
     public function actionIndex()
+    {
+
+        $this->render('index');
+    }
+
+
+    /**
+     * Index action:
+     * 
+     * @return void
+     */
+    public function actionIndexOld()
     {
         $module = Yii::app()->getModule('homepage');
 
